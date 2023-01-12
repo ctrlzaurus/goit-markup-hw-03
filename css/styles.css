@@ -21,6 +21,7 @@
     --primary-bg-color: #F5F5F5;
     --link-color: rgba(255, 255, 255, 0.6);
     --border-color: #eeeeee;
+    --shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -34,6 +35,10 @@ p {
     margin-top: 0; 
     margin-bottom: 0; 
     padding: 0;
+}
+
+img {
+    display: block;
 }
 
 ul {
@@ -83,7 +88,7 @@ ul {
 }
 
 .page-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .page-header .container {
@@ -164,18 +169,14 @@ ul {
 .buttons {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 26px;
+    gap: 8px;
 }
 
-.button {
-    margin-left: 8px;
-}
 
 .button {
     border-radius: 4px;
     padding: 6px 25px;
-    min-width: 73px;
     border: none;
 
     font-family: inherit;
@@ -310,23 +311,28 @@ ul {
 
 .set-command {
     display: flex;
-    flex-wrap: wrap;
 }
 .card-team {
     width: 270px;
     margin-right: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--secondary-logo-color);
+    box-shadow: var(--shadow-color);
 }
 .card-team:nth-child(4n) {
     margin-right: 0;
 }
-
-
+.person {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .list-team {
     background-color: var(--primary-bg-button-color);
 }
 .name {
-    font-size: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -341,10 +347,14 @@ ul {
 
 /* works */ 
 
+.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 .flex-element {
     width: 370px;
@@ -385,6 +395,8 @@ ul {
 /* футер */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
 }
 
