@@ -112,15 +112,14 @@ ul {
 .header-wrapper {
     display: flex;
     align-items: center;
+    gap: 50;
 }
 
 .list-nav {
     display: flex;
+    gap: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-.link {
-    margin-right: 50px;
 }
 
 .list-contacts {
@@ -205,6 +204,7 @@ ul {
     border: none;
 
     font-family: inherit;
+    letter-spacing: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -229,7 +229,7 @@ ul {
 .main {
     margin-right: auto;
     margin-left: auto;
-
+    width: 696px;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -314,6 +314,7 @@ ul {
 
 .feature {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -408,6 +409,7 @@ ul {
     color: var(--primary-text-color);
 }
 .description {
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--title-text-color);
